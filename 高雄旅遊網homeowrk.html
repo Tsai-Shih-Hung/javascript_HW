@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    
+    <style>
+        .container{
+            max-width: 1024px;
+            margin:0 auto;
+        }
+            
+        .headerpicture {
+            
+            margin: 0 auto;
+            width: 1024px;
+            height: 380px;
+        
+            position: relative;
+        }
+
+        .insideheader {
+            width: 452px;
+            height: 48px;
+            background-color: #ffffff 70%;
+            border: white soild 3px;
+            position: absolute;
+            top: 225px;
+            right: 279px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 89px;
+            right: 387.5px;
+        }
+
+        .inside {
+            width: 800px;
+            height: 112px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 352px;
+            right: 112px;
+            border: black solid 1px;
+        }
+
+        .insidetitle {
+            display: flex;
+        }
+
+        h3 {
+            position: absolute;
+
+            top: 20px;
+            left: 26px;
+            font-size: 18px;
+        }
+
+        .name {
+            width: 130px;
+            height: 42px;
+            text-align: center;
+            border: black solid 1px;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 52px;
+            ;
+            margin-left: 51px;
+            padding-top: 11px;
+            box-sizing: border-box;
+        }
+
+        .middle1 {
+            width: 900px;
+            margin: 0 auto;
+            border: 1px dotted #559AC8;
+            margin-top: 150px;
+            
+        }
+
+        #section {
+            margin: 0 auto;
+            width: 1024px;
+            display: flex;
+            flex-wrap:wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            
+                    
+        }
+
+        .content {
+            width: 464px;
+            height: 273px;
+            border:black solid 1px;
+            margin-right: 16px;
+            margin-bottom: 36px;
+            
+            
+        }
+        .foot{
+            width: 1024px;
+            height: 90px;
+            margin: 0 auto;
+            background-color: #559ac8;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div class="headerpicture" style="background-image: url('/assets/the-urban-landscape-1698285.png');">
+                <h1>高雄旅遊資訊</h1>
+                <form>
+                    
+                    <select class="insideheader" name="title" id="title">
+                        <option>--請選擇行政區--</option>
+                        <option class="苓雅區" value="苓雅區">苓雅區</option>
+                        <option class="三民區" value="三民區">三民區</option>
+                        <option class="新興區" value="新興區">新興區</option>
+                        <option class="鹽埕區" value="鹽埕區">鹽埕區</option>
+                    </select>
+                </form>
+                <div class="inside">
+                    <div>
+                        <h3>熱門行政區</h3>
+                    </div>
+                    <ul class="insidetitle">
+                        <li class="name" style="background-color: #8a82cc;"><a class="name1"href="#">苓雅區</a></li>
+                        <li class="name" style="background-color: #ffa782;"><a class="name2"href="#">三民區</a></li>
+                        <li class="name" style="background-color: #f5d005;"><a class="name3"href="#">新興區</a></li>
+                        <li class="name" style="background-color: #559ac8;"><a class="name4"href="#">鹽埕區</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="middle">
+            <hr class="middle1">
+            <h2 id="middlename" style="text-align: center;font-size: 36px;color:#8A82CC;margin-top: 65px;margin-bottom: 24px;">123</h2>
+        </div>
+        
+        
+        <section >
+            <div id="section">
+            
+            <div class="content">
+                <img src="assets/Hero.png" width="100%" height="50%">
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_clock.png"> hello</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_pin.png"> hello1</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_phone.png"> hello1</p>  
+            </div>
+            <div class="content">
+                <img src="assets/Hero.png" width="100%" height="50%">
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_clock.png"> hello</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_pin.png"> hello1</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_phone.png"> hello1</p>  
+            </div>
+            <div class="content">
+                <img src="assets/Hero.png" width="100%" height="50%">
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_clock.png"> hello</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_pin.png"> hello1</p>
+                <p style="margin-left: 23px;margin-top: 12px;"><img src="assets/icons_phone.png"> hello1</p>  
+            </div>
+        </div>  
+        </section>
+        
+    </div>
+    <footer>
+        <div class="foot" style="text-align: center;">
+            <p style="color:#FFFFFF;padding-top: 24px;">高學旅遊網</p>
+            <P style="color:#FFD366;padding-top: 15px;">資料來源:高雄市政府</P>
+        </div>
+    </footer>
+    <script src="/city.js"></script>
+</body>
+
+</html>
